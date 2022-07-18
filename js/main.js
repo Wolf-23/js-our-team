@@ -44,12 +44,15 @@ for (i = 0; i < teamArray.length; i++) {
     card.classList.add('card');
     //Aggiungo Card a containerDom
     containerDom.append(card);
+    //Creo nome, aggiungo il valore e lo appendo a Card 
     let nome = document.createElement('h2');
     card.append(nome);
     nome.append(teamArray[i].nome);
+    //Creo ruolo, aggiungo il valore e lo appendo a Card 
     let ruolo = document.createElement('h3');
     card.append(ruolo);
     ruolo.append(teamArray[i].ruolo);
+    //Creo immagine, aggiungo il valore e lo appendo a Card 
     let immagine = document.createElement('h4');
     card.append(immagine);
     immagine.append(teamArray[i].immagine);
