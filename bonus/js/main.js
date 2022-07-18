@@ -39,7 +39,7 @@ for (let key in teamArray) {
 }
 
 for (i = 0; i < teamArray.length; i++) {
-    //Creo Card
+    //Creo Card e aggiungo la classe card
     let card = document.createElement('div');
     card.classList.add('card');
     //Aggiungo Card a containerDom
@@ -52,12 +52,10 @@ for (i = 0; i < teamArray.length; i++) {
     let ruolo = document.createElement('h3');
     card.append(ruolo);
     ruolo.append(teamArray[i].ruolo);
-    //Creo immagine, aggiungo il valore e lo appendo a Card 
+    //Creo immagine, aggiungo la classe imgContainer
     let immagine = document.createElement('div');
     immagine.classList.add('imgContainer')
+    //Lo appendo a card e aggiungo il contenuto
     card.append(immagine);
     immagine.innerHTML = `<img class="my-img" src="img/${teamArray[i].immagine}">`;
-    
 }
-
-//+ ' ' + teamArray[i].ruolo + ' ' + teamArray[i].immagine);
