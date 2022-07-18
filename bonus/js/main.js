@@ -54,8 +54,10 @@ for (i = 0; i < teamArray.length; i++) {
     ruolo.append(teamArray[i].ruolo);
     //Creo immagine, aggiungo la classe imgContainer
     let immagine = document.createElement('div');
-    immagine.classList.add('imgContainer')
+    immagine.classList.add('imgContainer');
     //Lo appendo a card e aggiungo il contenuto
     card.append(immagine);
     immagine.innerHTML = `<img class="my-img" src="img/${teamArray[i].immagine}">`;
 }
+
+
